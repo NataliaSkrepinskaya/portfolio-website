@@ -1,0 +1,44 @@
+html {
+	font-size: 100%;
+}
+
+body {
+background: #ffffff;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+color: #323030;
+}
+
+h1 {
+	font-family: 'Rokkitt', serif;
+	font-size: 3.125rem;
+	line-height: 5rem;
+	color: #323030;
+}
+
+h2 {
+	font-size: 1.875rem;
+	line-height: 3rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	line-height: 2rem;
+}
+
+p { 
+	font-size: 1.25rem;
+	line-height: 2rem;
+}
+
+.about, .story {
+	font-size: 0.8125rem;
+	line-height: 1.3rem;
+}
+
+ .footer p {
+ 	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 0.625rem;
+	line-height: 1rem;
+}
