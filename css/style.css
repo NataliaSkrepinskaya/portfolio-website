@@ -1,5 +1,5 @@
 html {
-	font-size: 100%;
+	font-size: 16px;
 }
 
 body {
@@ -13,12 +13,17 @@ h1 {
 	font-family: 'Rokkitt', serif;
 	font-size: 3.125rem;
 	line-height: 5rem;
-	color: #323030;
+	color: #380DE4;
+}
+
+.main_p h1{
+	color: #1C0969;
 }
 
 h2 {
 	font-size: 1.875rem;
 	line-height: 3rem;
+	color: #B13C04;
 }
 
 h3 {
@@ -42,3 +47,108 @@ p {
 	font-size: 0.625rem;
 	line-height: 1rem;
 }
+
+ul {
+	list-style: none;
+}
+
+ nav ul li a {
+	font-size: 1.5625rem;
+	line-height: 2.5rem;
+	color: #380DE4;
+	text-decoration: none;
+	
+}
+
+nav ul li a:hover, nav ul li a:focus {
+	color: #3B2693;
+	border-bottom: 0.125rem solid #3B2693;
+}
+
+.works {
+	font-size: 1.25rem;
+	line-height: 2rem;
+	color: #323030;
+	text-decoration: none;
+}
+
+.works:hover, .works:focus {
+	color: #040404;
+}
+
+.fixedsvg {
+    display: inline-block;
+    position: fixed;
+    bottom: 3.125rem;
+    right: 4.375rem;
+    z-index: 0;
+}
+
+#home {
+	background-color: #ffffff;
+	position: relative;
+	z-index: 1;
+}
+
+
+
+.inputs {
+  text-align: center;
+}
+
+.form input {
+  border: none;
+  text-align: center;
+  font-size: 1.5625rem;
+  line-height: 2.5rem;
+  color: #323030;
+  padding-top: 1.93rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.line {
+  width: 39.375rem;
+  height: 0.0625rem;
+  background-color: #323030;
+  margin: 0 auto;
+}
+
+.line-mes{
+  width: 57.5rem;
+  height: 0.0625rem;
+  background-color: #323030;
+  margin: 0 auto;
+}
+
+.form-button button {
+  background-color: #F4550A;
+  border: none;
+  width: 12.1875rem;
+  height: 3.125rem; 
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.125rem;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  margin: 3.375rem 0 4.375rem 0;
+}
+
+.form-button button:hover, .form-button button:focus {
+  background: #D14807;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
