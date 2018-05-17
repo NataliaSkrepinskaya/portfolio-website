@@ -3,7 +3,6 @@ html {
 }
 
 body {
-background: #ffffff;
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
 color: #323030;
@@ -13,7 +12,9 @@ h1 {
 	font-family: 'Rokkitt', serif;
 	font-size: 3.125rem;
 	line-height: 5rem;
-	color: #380DE4;
+	color: #3B2693;
+	text-align: center;
+	padding-top: 10rem;
 }
 
 .main_p h1{
@@ -31,9 +32,76 @@ h3 {
 	line-height: 2rem;
 }
 
-p { 
+p, article {
 	font-size: 1.25rem;
 	line-height: 2rem;
+}
+
+.header {
+	width: 100%;
+	height: 6.25rem;
+	margin: 0rem auto;
+	background: #fff;
+	z-index:0;
+}
+
+.container {
+	max-width: 75rem;
+	height: 6.25rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20rem;
+	padding-right: 20rem;
+
+}
+
+.top-panel {
+	width: 100%;
+	box-sizing:border-box;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	position: fixed;
+	background-color: white;
+	z-index: 9999;
+
+	top: 0;
+	left: 0;
+
+	-webkit-box-shadow: 0 10px 6px -6px #E8E4F8;
+       -moz-box-shadow: 0 10px 6px -6px #E8E4F8;
+            box-shadow: 0 10px 6px -6px #E8E4F8;
+}
+
+.top-panel__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+.menu__list {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.menu__list-item {
+	display: inline-block;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
+.menu__link {
+	font-size: 1.5625rem;
+	line-height: 2.5rem;
+	color: #3B2693;
+	text-decoration: none;
 }
 
 .about, .story {
@@ -48,33 +116,131 @@ p {
 	line-height: 1rem;
 }
 
-ul {
+
+.menu__link:hover, .menu__link:focus {
+	color: #380DE4;
+	border-bottom: 0.125rem solid #380DE4;
+}
+
+.menu__list-item:not(:first-child){
+	margin-left: 3rem;
+}
+
+.main_p {
+  display: flex;
+}
+
+.title {
+	text-align: center;
+	margin: 4rem auto auto auto;
+}
+
+.menu-ad {
+	margin-top: 1.5rem;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0;
 	list-style: none;
 }
 
- nav ul li a {
-	font-size: 1.5625rem;
-	line-height: 2.5rem;
-	color: #380DE4;
-	text-decoration: none;
-	
+.ad-item {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
 }
 
-nav ul li a:hover, nav ul li a:focus {
-	color: #3B2693;
-	border-bottom: 0.125rem solid #3B2693;
+.ad-item:not(:first-child){
+	margin-left: 15rem;
+}
+
+.my-works {
+	display: flex;
+  flex-wrap: wrap;
 }
 
 .works {
+	display: flex;
+	flex-direction: column;
+	max-width: 35rem;
+	min-width: 25rem;
+	margin-top: 2rem;
 	font-size: 1.25rem;
 	line-height: 2rem;
 	color: #323030;
 	text-decoration: none;
 }
 
+.works:nth-child(odd) {
+	margin-left: auto;
+	margin-right: 1rem;
+}
+
+.works:nth-child(even) {
+	margin-right: auto;
+	margin-left: 1rem;
+}
+
+.image-block {
+	height: 75%;
+	flex-grow: 1;
+
+}
+
+.image-block img {
+	max-width: 100%;
+	display: inline-block;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+}
+
+.content-block {
+	height: 25%;
+	flex-grow: 1;
+	padding: 1rem;
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	background: white;
+}
+
+.effect {
+	 -webkit-box-shadow: 0 10px 6px -6px #E8E4F8;
+       -moz-box-shadow: 0 10px 6px -6px #E8E4F8;
+            box-shadow: 0 10px 6px -6px #E8E4F8;
+}
+
+
 .works:hover, .works:focus {
 	color: #040404;
 }
+
+.wrap {
+	width: 100%;
+	max-width: 80rem;
+	min-width: 25rem;
+	padding: 1rem;
+	margin: 0 auto;
+}
+
+.about {
+	width: 60%;
+	height: 46rem;
+	display: inline-block;
+	padding: 0 1rem 1rem 1rem;
+	box-sizing: border-box;
+}
+
+.my_photo {
+	width: 40%;
+	height: 46rem;
+	float: right;
+	box-sizing: border-box;
+}
+
+.my_photo img {
+	min-width: 100%;
+}
+
 
 .fixedsvg {
     display: inline-block;
@@ -83,13 +249,6 @@ nav ul li a:hover, nav ul li a:focus {
     right: 4.375rem;
     z-index: 0;
 }
-
-#home {
-	background-color: #ffffff;
-	position: relative;
-	z-index: 1;
-}
-
 
 
 .inputs {
@@ -127,7 +286,7 @@ input:focus {
   background-color: #F4550A;
   border: none;
   width: 12.1875rem;
-  height: 3.125rem; 
+  height: 3.125rem;
   text-transform: uppercase;
   font-size: 1.5rem;
   letter-spacing: 0.125rem;
@@ -140,15 +299,3 @@ input:focus {
   background: #D14807;
   color: #ffffff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
