@@ -11,11 +11,15 @@
 <body>
   <header class="header">
     <div class="top-panel">
-      <div class="container top-panel__container">
+      <div class="container">
         <a href="#home">
-	        <img src="images/logo/logo100@1x.png" srcset="images/logo/logo100@1x.png 1x, images/logo/logo100@2x.png 2x, images/logo/logo100@3x.png 3x" class="logo" alt="logo">
+          <picture>
+            <source srcset="images/logo/logo35@1x.png 1x, images/logo/logo35@2x.png 2x, images/logo/logo35@3x.png 3x" media="(max-width: 599px)">
+            <source srcset="images/logo/logo70@1x.png 1x, images/logo/logo70@2x.png 2x, images/logo/logo70@3x.png 3x" media=" (min-width: 600px) and (max-width: 960px)">
+            <source srcset="images/logo/logo100@1x.png 1x, images/logo/logo100@2x.png 2x, images/logo/logo100@3x.png 3x">
+            <img src="images/logo/logo100@1x.png" srcset="images/logo/logo100@1x.png 1x, images/logo/>logo100@2x.png 2x, images/logo/Logo100@3x.png 3x" class="logo" alt="logo">
+          </picture>
         </a>
-
         <nav class="menu js-menu">
 	        <ul class="menu__list">
             <li class="menu__list-item"><a href="#my_works" class="menu__link">My Works</a></li>
@@ -32,29 +36,22 @@
       <h1 class="title">Give me the responsability <br> to make your business better!</h1>
     </div>
 
-    <div class=" menu ad">
-      <ul class="menu-ad">
-        <li class="ad-item"><h2>UX Design</h2></li>
-        <li class="ad-item"><h2>UI Design</h2></li>
-        <li class="ad-item"><h2>Fronted<br>Development</h2></li>
-      </ul>
-    </div
+      <div class="menu">
+        <ul class="menu-ad"><!--here I will add svg files in next task-->
+          <li class="ad-item"><h2>UX Design</h2></li>
+          <li class="ad-item"><h2>UI Design</h2></li>
+          <li class="ad-item"><h2>Fronted<br>Development</h2></li>
+        </ul>
+    </div>
   </div>
-  </div>
-
-
-
-
-
 
   <section id="my_works"> <!--the section #my_works-->
-    <div>
-        <h1>My Works</h1>
+        <h1>Projects</h1>
 
       <div class="my-works">
           <a class="works" href="project1.html"> <!--project1-->
            <div class="image-block"> <!--image block-->
-            <img src="images/project1/home_page1@1x.png" srcset="images/project1/home_page1@1x.png 1x, images/project1/home_page1@2x.png 2x, images/project1/home_page1@3x.png 3x" alt="Ink Tank App">
+             <img src="images/project1/home_page1@1x.png" srcset="images/project1/home_page1@1x.png 1x, images/project1/home_page1@2x.png 2x, images/project1/home_page1@3x.png 3x" alt="Ink Tank App">
            </div>
            <div class="content-block effect"> <!--content block-->
              <p>UX Project Ink Tank App for tattoo lovers and tattoo artists. For finding the design of a future tattoo, trying it in AR and chatting with tattoo artists. 2017</p>
@@ -88,56 +85,68 @@
           </div>
         </a>
       </div>
-    </div>
   </section>
 
   <section id="my_story" >  <!--the section #my_story-->
-    <div>
-        <h1>Hi, I'm Natalia!</h1>
-      <div class="wrap">
+      <h1>Hi, I'm Natalia!</h1>
+
           <div class="about">
-            <article>I care intensely about good, useful, and thoroughly thought out user-centred design, creating projects that make people's lives easier.<br><br>My experiences in finance and e-commerce have given me skills that are crucial in the usability design industry. As an accountant, I am self-disciplined and detail-oriented. As a co-founder of e-commerce project, I’m able to create logical and innovative solutions to complex problems based on requirements. Having skills in front-end development, I am not afraid of challenges or thinking outside the box.<br><br>Having lived, studied and worked in different countries across the globe, I possess foreign language skills and intercultural sensibility, which are vital skills in understanding very different groups of users around the world and communicating with international clients and colleagues.<br><br>When I'm not working and studying, I go trekking in mountains, walk with my dogs and do yoga.<br><br>I am based in Bergamo, Italy but am originally from Saint Petersburg, Russia.<br><br>For more information on my work, to get in touch or offer me job opportunities, feel free to contact me and see my resume.
+
+            <article><img class="mein" src="images/photo/my_photo@1x.png" srcset="images/photo/my_photo@1x.png 1x, images/photo/my_photo@2x.png 2x, images/photo/my_photo@3x.png 3x" alt="Girl">I care intensely about good, useful, and thoroughly thought out user-centred design, creating projects that make people's lives easier.<br><br>My experiences in finance and e-commerce have given me skills that are crucial in the usability design industry. As an accountant, I am self-disciplined and detail-oriented. As a co-founder of e-commerce project, I’m able to create logical and innovative solutions to complex problems based on requirements. Having skills in front-end development, I am not afraid of challenges or thinking outside the box.<br><br>Having lived, studied and worked in different countries across the globe, I possess foreign language skills and intercultural sensibility, which are vital skills in understanding very different groups of users around the world and communicating with international clients and colleagues.<br><br>When I'm not working and studying, I go trekking in mountains, walk with my dogs and do yoga.<br><br>I am based in Bergamo, Italy but am originally from Saint Petersburg, Russia.<br><br>For more information on my work, to get in touch or offer me job opportunities, feel free to contact me and see my resume.
             </article>
 
 
-            <div> <!--button to view or download resume-->
+            <div class="download-cv"> <!--button to view or download resume-->
+              <button class="download" onClick="window.location. href='images/cv/Skrepinskaya_Natalia_Resume copy.pdf'">Download</button>
             </div>
          </div>
-        <div class="my_photo">
-          <img src="images/photo/my_photo@1x.png" srcset="images/photo/my_photo@1x.png 1x, images/photo/my_photo@2x.png 2x, images/photo/my_photo@3x.png 3x" alt="Girl">
-        </div>
-    </div>
 
-    <div>
-      <h1>About Me</h1>
-    </div>
 
-    <div>
-	   <div>
-		    <img src="images/about_me/1_about_me@1x.png" srcset="images/about_me/1_about_me@1x.png 1x, images/about_me/1_about_me@2x.png 2x, images/about_me/1_about_me@3x.png 3x" alt="Guys with computer">
-		  </div>
+
+    <h1>About Me</h1>
+
+    <div class="wrapper">
+      <div class="line_f">
+	     <div class="pic">
+         <picture>
+           <source srcset="images/about_me/1_about_me200@1x.png 1x, images/about_me/1_about_me200@2x.png 2x, images/about_me/1_about_me200@3x.png 3x" media="(max-width: 599px)">
+           <source srcset="images/about_me/1_about_me300@1x.png 1x, images/about_me/1_about_me300@2x.png 2x, images/about_me/1_about_me300@3x.png 3x" media="(min-width: 600px) and (max-width: 1023px)">
+           <source srcset="images/about_me/1_about_me400@1x.png 1x, images/about_me/1_about_me400@2x.png 2x, images/about_me/1_about_me400@3x.png 3x" media="(min-width: 1024px) and (max-width: 1366px)">
+           <source srcset="images/about_me/1_about_me600@1x.png 1x, images/about_me/1_about_me600@2x.png 2x, images/about_me/1_about_me600@3x.png 3x">
+           <img src="images/about_me/1_about_me600@1x.png" srcset="images/about_me/1_about_me600@1x.png 1x, images/about_me/1_about_me600@2x.png 2x, images/about_me/1_about_me600@3x.png 3x" alt="Guys with laptop">
+         </picture>
+		   </div>
+        <div class="story">
+		      <h3>February 2015</h3>
+		      <p>I was been involved in web design industry from 2015 as a co-founder of e-commerce start-up, I have experience in cooperating remotely with a multi-national team of 10 people and easily adapt to dynamic development projects. I headed the development of company's brand standards and I led in identification UI/UX problems of the project according to user persona and troubleshoot in UX issues.</p>
+	      </div>
+      </div>
+
+    <div class="line_f">
       <div class="story">
-		    <h3>February 2015</h3>
-		    <p>I was been involved in web design industry from 2015 as a co-founder of e-commerce start-up, I have experience in cooperating remotely with a multi-national team of 10 people and easily adapt to dynamic development projects. I headed the development of company's brand standards and I led in identification UI/UX problems of the project according to user persona and troubleshoot in UX issues.</p>
-	    </div>
-    </div>
-
-    <div>
-      <div>
 		    <h3>April 2017</h3>
 		    <p>I become a graduate of front-end development course, I have experience coding in HTML5, CSS3 and basic JavaScript and web design course. Developed separate snippets of code for the responsive and mobile front-end development. Built web page by ready design. Produced responsive web design for 1 real-world project.</p>
 	    </div>
-	    <div>
-        <div>
-		      <img src="images/about_me/2_about_me@1x.png" srcset="images/about_me/2_about_me@1x.png 1x, images/about_me/2_about_me@2x.png 2x, images/about_me/2_about_me@3x.png 3x" alt="Computer with code">
+        <div class="pic">
+          <picture>
+            <source srcset="images/about_me/2_about_me200@1x.png 1x, images/about_me/2_about_me200@2x.png 2x, images/about_me/2_about_me200@3x.png 3x" media="(max-width: 599px)">
+            <source srcset="images/about_me/2_about_me300@1x.png 1x, images/about_me/2_about_me300@2x.png 2x, images/about_me/2_about_me300@3x.png 3x" media="(min-width: 600px) and (max-width: 1023px)">
+            <source srcset="images/about_me/2_about_me400@1x.png 1x, images/about_me/2_about_me400@2x.png 2x, images/about_me/2_about_me400@3x.png 3x" media="(min-width: 1024px) and (max-width: 1366px)">
+            <source srcset="images/about_me/2_about_me600@1x.png 1x, images/about_me/2_about_me600@2x.png 2x, images/about_me/2_about_me600@3x.png 3x">
+            <img src="images/about_me/2_about_me600@1x.png" srcset="images/about_me/2_about_me600@1x.png 1x, images/about_me/2_about_me600@2x.png 2x, images/about_me/2_about_me600@3x.png 3x" alt="Computer">
+          </picture>
         </div>
-      </div>
-      <div></div>
     </div>
 
-    <div>
-		  <div>
-		    <img src="images/about_me/3_about_me@1x.png" srcset="images/about_me/3_about_me@1x.png 1x, images/about_me/3_about_me@2x.png 2x, images/about_me/3_about_me@3x.png 3x" alt="Computer on the table with prototypes">
+    <div class="line_f">
+		  <div class="pic">
+        <picture>
+          <source srcset="images/about_me/3_about_me200@1x.png 1x, images/about_me/3_about_me200@2x.png 2x, images/about_me/3_about_me200@3x.png 3x" media="(max-width: 599px)">
+          <source srcset="images/about_me/3_about_me300@1x.png 1x, images/about_me/3_about_me300@2x.png 2x, images/about_me/3_about_me300@3x.png 3x" media="(min-width: 600px) and (max-width: 1023px)">
+          <source srcset="images/about_me/3_about_me400@1x.png 1x, images/about_me/3_about_me400@2x.png 2x, images/about_me/3_about_me400@3x.png 3x" media="(min-width: 1024px) and (max-width: 1366px)">
+          <source srcset="images/about_me/3_about_me600@1x.png 1x, images/about_me/3_about_me600@2x.png 2x, images/about_me/3_about_me600@3x.png 3x">
+          <img src="images/about_me/3_about_me600@1x.png" srcset="images/about_me/3_about_me600@1x.png 1x, images/about_me/3_about_me600@2x.png 2x, images/about_me/3_about_me600@3x.png 3x" alt="Computer">
+        </picture>
 		  </div>
       <div class="story">
 		    <h3>December 2017</h3>
@@ -145,103 +154,169 @@
       </div>
     </div>
 
-    <div>
+    <div class="line_f">
       <div class="story">
 		    <h3>March 2018</h3>
 		    <p>As a recent graduate of CareerFoundry's UX Design Course in English, I have experience in designing 3 app projects from beginning through user persona development and sitemap to prototyping, GUI design, usability testing and final mockups. For UX/UI design I use Sketch and Adobe Creative Cloud apps, Axure, Invision, Optimal Workshop, UsabilityHub, GetFeedback, ManageBag.</p>
 	    </div>
-		  <div>
-		    <img src="images/about_me/4_about_me@1x.png" srcset="images/about_me/4_about_me@1x.png 1x, images/about_me/4_about_me@2x.png 2x, images/about_me/4_about_me@3x.png 3x" alt="Affinity map">
+		  <div class="pic">
+        <picture>
+          <source srcset="images/about_me/4_about_me200@1x.png 1x, images/about_me/4_about_me200@2x.png 2x, images/about_me/4_about_me200@3x.png 3x" media="(max-width: 599px)">
+          <source srcset="images/about_me/4_about_me300@1x.png 1x, images/about_me/4_about_me300@2x.png 2x, images/about_me/4_about_me300@3x.png 3x" media="(min-width: 600px) and (max-width: 1023px)">
+          <source srcset="images/about_me/4_about_me400@1x.png 1x, images/about_me/4_about_me400@2x.png 2x, images/about_me/4_about_me400@3x.png 3x" media="(min-width: 1024px) and (max-width: 1366px)">
+          <source srcset="images/about_me/4_about_me600@1x.png 1x, images/about_me/4_about_me600@2x.png 2x, images/about_me/4_about_me600@3x.png 3x">
+          <img src="images/about_me/4_about_me600@1x.png" srcset="images/about_me/4_about_me600@1x.png 1x, images/about_me/4_about_me600@2x.png 2x, images/about_me/4_about_me600@3x.png 3x" alt="Affinity map">
+        </picture>
 		  </div>
 	  </div>
 
-	  <div>
-		  <p>My Story<br>Continues...</p>
-	  </div>
+    <div class="line_f">
+		  <div class="pic">
+        <picture>
+          <source srcset="images/about_me/3_about_me200@1x.png 1x, images/about_me/3_about_me200@2x.png 2x, images/about_me/3_about_me200@3x.png 3x" media="(max-width: 599px)">
+          <source srcset="images/about_me/3_about_me300@1x.png 1x, images/about_me/3_about_me300@2x.png 2x, images/about_me/3_about_me300@3x.png 3x" media="(min-width: 600px) and (max-width: 1366px)">
+          <source srcset="images/about_me/3_about_me600@1x.png 1x, images/about_me/3_about_me600@2x.png 2x, images/about_me/3_about_me600@3x.png 3x">
+          <img src="images/about_me/3_about_me600@1x.png" srcset="images/about_me/3_about_me600@1x.png 1x, images/about_me/3_about_me600@2x.png 2x, images/about_me/3_about_me600@3x.png 3x" alt="Computer">
+        </picture>
+		  </div>
+      <div class="story">
+		    <h3>Present</h3>
+		    <p>My story contunues...</p>
+      </div>
+    </div>
+  </div>
   </section>
 
   <section id="contact_me" >
-    <div>
-      <h1>Stay in Touch</h1>
-    </div>
+    <h1>Stay in Touch</h1>
     <div class="inputs">
-      <div class="form">
-        <input class="text-style" type="text" name="name" placeholder="Name">
-        <hr class="line">
-      </div>
-      <div class="form">
-        <input class="text-style" type="text" name="email" placeholder="Email Address">
-        <hr class="line">
-      </div>
-      <div class="form">
-        <input class="text-style" type="textarea" name="message" placeholder="Message">
-        <hr class="line-mes">
-      </div>
-      <div class="form">
-        <input class="text-style" type="textarea" name="text">
-        <hr class="line-mes">
-      </div>
-      <div class="form-button">
-        <button type="button">submit</button>
-      </div>
+      <form action="/send.php" method="post">
+        <div class="group">
+          <label>Name</label>
+          <input type="text" required>
+        </div>
+        <div class="group">
+          <label>Email</label>
+          <input type="email" required>
+        </div>
+        <div class="group">
+          <label>Message</label>
+          <input type="text" required>
+        </div>
+        <input type="submit" value="submit">
+     </form>
     </div>
 
     <div>
-      <div>
         <h1>Follow Me</h1>
-      </div>
-
-      <ul>
-        <li>
-          <a class="mk-square-pointed" target="_blank" href="https://www.linkedin.com/in/natalia-skrepinskaya">
-            <svg class="mk-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
-              <path id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707   c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21   v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824   C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463   c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z    M5.477,420.56h92.184v-277.32H5.477V420.56z">
-              </path>
+      <div class="menu">
+      <ul class=menu-social>
+        <li class="icon-item">
+          <a class="social_icon" target="_blank" href="https://www.linkedin.com/in/natalia-skrepinskaya">
+            <svg class="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 viewBox="0 0 486.392 486.392" style="enable-background:new 0 0 486.392 486.392;" xml:space="preserve">
+              <g>
+            	  <g>
+            		  <g>
+            			  <path d="M243.196,0C108.891,0,0,108.891,0,243.196s108.891,243.196,243.196,243.196
+            				s243.196-108.891,243.196-243.196C486.392,108.861,377.501,0,243.196,0z M182.397,360.994h-60.799V148.197h60.799V360.994z
+            				 M153.882,135.156c-15.747,0-28.484-12.768-28.484-28.515s12.768-28.515,28.484-28.515c15.747,0.03,28.515,12.798,28.515,28.515
+            				C182.397,122.388,169.629,135.156,153.882,135.156z M395.193,360.994h-60.799V229.425c0-15.413-4.408-26.204-23.347-26.204
+            				c-31.403,0-37.452,26.204-37.452,26.204v131.569h-60.799V148.197h60.799v20.337c8.694-6.657,30.399-20.307,60.799-20.307
+            				c19.699,0,60.799,11.795,60.799,83.051V360.994z"/>
+            		  </g>
+            	  </g>
+              </g>
             </svg>
           </a>
         </li>
 
-        <li>
+        <li class="icon-item">
           <a class="social_icon" target="_blank" href="https://www.behance.net/beniprodux09bc">
-            <svg class="icon_social" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 430.123 430.123" style="enable-background:new 0 0 430.123 430.123;" xml:space="preserve">
+            <svg class="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 viewBox="0 0 97.75 97.75" style="enable-background:new 0 0 97.75 97.75;" xml:space="preserve">
               <g>
-                <path id="Behance" d="M388.432,119.12H280.659V92.35h107.782v26.77H388.432z M208.912,228.895   c6.954,10.771,10.429,23.849,10.429,39.203c0,15.878-3.918,30.122-11.889,42.704c-5.071,8.326-11.367,15.359-18.932,21.021   c-8.52,6.548-18.607,11.038-30.203,13.437c-11.633,2.403-24.224,3.617-37.787,3.617H0V81.247h129.25   c32.579,0.53,55.676,9.969,69.315,28.506c8.184,11.369,12.239,25.011,12.239,40.868c0,16.362-4.104,29.454-12.368,39.401   c-4.597,5.577-11.388,10.65-20.378,15.229C191.675,210.236,202.007,218.086,208.912,228.895z M61.722,186.76h56.632   c11.638,0,21.046-2.212,28.292-6.634c7.241-4.415,10.854-12.263,10.854-23.531c0-12.449-4.784-20.712-14.375-24.689   c-8.244-2.763-18.792-4.186-31.591-4.186H61.722V186.76z M162.953,264.275c0-13.902-5.682-23.513-17.023-28.67   c-6.342-2.931-15.29-4.429-26.763-4.536H61.722v71.322h56.556c11.619,0,20.612-1.521,27.102-4.694   C157.084,291.863,162.953,280.76,162.953,264.275z M428.419,220.736c1.302,8.756,1.891,21.46,1.652,38.065H290.493   c0.77,19.266,7.421,32.739,20.035,40.449c7.607,4.835,16.83,7.196,27.63,7.196c11.388,0,20.67-2.879,27.815-8.797   c3.893-3.137,7.327-7.565,10.296-13.152h51.16c-1.34,11.379-7.5,22.92-18.57,34.648c-17.151,18.641-41.205,27.988-72.097,27.988   c-25.52,0-48.011-7.883-67.533-23.592C249.772,307.777,240,282.211,240,246.746c0-33.257,8.773-58.712,26.378-76.43   c17.67-17.751,40.474-26.586,68.583-26.586c16.661,0,31.68,2.978,45.079,8.965c13.357,5.993,24.396,15.425,33.09,28.388   C420.998,192.499,426.058,205.699,428.419,220.736z M378.062,225.73c-0.938-13.322-5.386-23.405-13.395-30.296   c-7.943-6.91-17.866-10.379-29.706-10.379c-12.886,0-22.836,3.708-29.906,10.996c-7.118,7.273-11.547,17.161-13.362,29.68H378.062   L378.062,225.73z"/>
+            	  <g>
+            		  <path d="M39.337,38.729c0-4.611-3.137-4.611-3.137-4.611h-1.661H23.294v9.894H35.4C37.492,44.011,39.337,43.342,39.337,38.729z"/>
+            		  <path d="M36.201,50.846H23.294v11.85h12.311c1.852-0.053,5.27-0.633,5.27-5.76C40.875,50.784,36.201,50.846,36.201,50.846z"/>
+            		  <path d="M69.243,44.011c-6.849,0-7.804,6.835-7.804,6.835h14.565C76.005,50.846,76.092,44.011,69.243,44.011z"/>
+            		  <path d="M48.875,0C21.882,0,0,21.883,0,48.875S21.882,97.75,48.875,97.75S97.75,75.867,97.75,48.875S75.868,0,48.875,0z
+            			 M59.531,28.848h18.294v5.46H59.531V28.848z M50.285,57.486c0,13.533-14.084,13.088-14.084,13.088H23.294h-0.379h-9.787V26.236
+            			h9.787h0.379H36.2c7.012,0,12.547,3.871,12.547,11.805c0,7.935-6.766,8.438-6.766,8.438C50.9,46.479,50.285,57.486,50.285,57.486z
+            			 M69.33,64.479c7.37,0,7.109-4.77,7.109-4.77h7.803c0,12.659-15.172,11.792-15.172,11.792c-18.207,0-17.036-16.95-17.036-16.95
+            			S52.02,37.517,69.068,37.517c17.947,0,15.434,19.245,15.434,19.245H61.527C61.527,65.001,69.33,64.479,69.33,64.479z"/>
+            	  </g>
               </g>
             </svg>
           </a>
         </li>
 
-        <li>
+        <li class="icon-item">
           <a class="social_icon" target="_blank" href="https://github.com/NataliaSkrepinskaya">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+            <svg class="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	  viewBox="0 0 438.549 438.549" style="enable-background:new 0 0 438.549 438.549;"
+            	 xml:space="preserve">
               <g>
-                <path id="Github" d="M117.639,124.36c-25.396,0-47.242,8.403-65.542,25.208c-19.043,17.926-28.57,40.33-28.57,67.218   c0,17.926,5.188,34.731,15.647,50.416c9.337,14.563,19.09,23.903,31.889,28.012v1.121c-12.799,5.224-18.483,18.295-18.483,39.209   c0,16.062,5.686,28.011,18.483,35.854v1.121c-35.327,11.571-51.496,33.047-51.496,64.413c0,27.269,11.874,47.244,35.033,59.939   C72.895,506.959,96.389,512,124.773,512c69.085,0,103.703-28.941,103.703-86.832c0-36.223-26.661-58.441-80.064-66.658   c-12.323-1.863-21.643-6.348-27.991-13.445c-4.854-4.854-7.271-9.709-7.271-14.562c0-13.815,7.479-21.848,22.41-24.088   c22.779-3.356,41.364-13.912,55.743-31.647c14.375-17.74,21.565-38.56,21.565-62.458c0-7.469-2.259-15.498-5.244-24.086   c9.709-2.244,16.525-4.297,21.646-6.166V124.36c-22.527,8.964-43.495,13.442-61.421,13.442   C152.162,128.841,135.937,124.36,117.639,124.36z M123.801,403.885c31.372,0,47.052,9.521,47.052,28.57   c0,20.168-14.377,30.246-43.132,30.246c-32.862,0-49.293-9.711-49.293-29.127C78.427,413.779,93.55,403.885,123.801,403.885z    M119.88,256c-23.527,0-35.293-12.882-35.293-38.654c0-27.631,11.766-41.453,35.293-41.453c11.201,0,19.979,4.298,26.326,12.884   c5.229,7.845,7.845,17.18,7.845,28.011C154.051,242.927,142.658,256,119.88,256z M290.191,0c-10.828,0-20.069,4.107-27.728,12.324   c-7.656,8.218-11.484,18.108-11.484,29.688c0,11.205,3.829,20.91,11.484,29.129c7.654,8.217,16.896,12.32,27.728,12.32   c10.455,0,19.515-4.104,27.171-12.32c7.655-8.219,11.479-17.924,11.479-29.129c0-11.58-3.824-21.472-11.479-29.688   C309.703,4.107,300.646,0,290.191,0z M321.565,127.999h-63.304c0.747,7.168-0.32,18.021-0.32,35.57v174.216   c0,17.928,1.067,32.387,0.32,38.018h63.304c-0.75-8.188-2.697-22.334-2.697-41.379V162.451   C318.865,146.019,320.815,135.167,321.565,127.999z M461.168,322.1c-16.437,0-24.541-12.514-24.541-37.533V181.247h24.932   c4.479,0,8.517-0.246,13.56,0.123c5.043,0.374,7.076,0.125,9.64,0.125V128h-48.129v-23.808c0-8.961,1.407-17.151,2.526-22.271   h-64.979c1.121,5.12,1.015,12.938,1.015,23.395V128h-28.16v53.494c7.683-1.12,14.545-1.678,19.397-1.678l8.763,0.559v0.292l0,0   v101.101c0,31.371,3.979,54.336,11.817,68.9c10.461,19.42,28.812,29.129,56.067,29.129c19.425,0,36.56-3.732,49.356-11.205v-56.016   C482.196,318.926,472.742,322.1,461.168,322.1z"/>
+            	  <path d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
+            		c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
+            		c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996
+            		c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136
+            		c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559
+            		c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559
+            		c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997
+            		c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851
+            		c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136
+            		c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41
+            		c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126
+            		c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817
+            		c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994
+            		c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849
+            		c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24
+            		c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979
+            		c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146
+            		c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995
+            		c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906
+            		C438.536,184.851,428.728,148.168,409.132,114.573z"/>
               </g>
             </svg>
           </a>
         </li>
 
-        <li>
+        <li class="icon-item">
           <a class="social_icon" target="_blank" href="https://www.facebook.com/reghina.felice">
-            <svg class="icon_social" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 430.113 430.114" style="enable-background:new 0 0 430.113 430.114;" xml:space="preserve">
+            <svg class="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 viewBox="0 0 112.196 112.196" style="enable-background:new 0 0 112.196 112.196;" xml:space="preserve">
               <g>
-                <path id="Facebook" d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805   c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354   c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"></path>
+               <circle class="icon-circle" cx="56.098" cy="56.098" r="56.098"/>
+            	  <path style="fill:#FFFFFF;" d="M70.201,58.294h-10.01v36.672H45.025V58.294h-7.213V45.406h7.213v-8.34
+            		c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.668-3.217,3.513v7.585h11.334L70.201,58.294z"/>
               </g>
             </svg>
+
           </a>
         </li>
       </ul>
     </div>
+    </div>
   </section>
 
   <footer class="footer"> <!--position relative-->
-    <p>&#169; Skrepinskaya Natalia</p>
+    <div class="footer-panel">
+      <p>&#169; Skrepinskaya Natalia</p>
+    </div>
   </footer>
-  <a class="fixedsvg" href="#">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98px" height="98px" viewBox="0 0 98 98" version="1.1">
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <image id="fixedicon" x="0" y="0" width="98" height="98" xlink:href="data:image/png;base64,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"/>
-      </g>
+  <a class="fixed" href="#">
+    <svg class="fixedicon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    	 viewBox="0 0 474.64 474.64" style="enable-background:new 0 0 474.64 474.64;" xml:space="preserve">
+    <g>
+    	<g>
+    		<g>
+    			<path  d="M247.554,161.534c-3.115-3.115-7.183-4.608-11.283-4.608s-8.168,1.494-11.283,4.608
+    				L121.918,264.605c-6.198,6.198-6.198,16.273,0,22.47c6.198,6.198,16.273,6.198,22.47,0l91.883-91.883l91.883,91.883
+    				c6.198,6.198,16.273,6.198,22.47,0c6.198-6.198,6.198-16.273,0-22.47L247.554,161.534z"/>
+    		</g>
+    	</g>
+    </g>
     </svg>
   </a>
 </body>

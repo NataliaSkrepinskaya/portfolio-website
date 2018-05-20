@@ -8,69 +8,83 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|Rokkitt" rel="stylesheet">
 </head>
 <body>
-	<header> <!--position fixed-->
-		<div>
-            <a href="index.html#home">
-               <img src="images/logo/logo100@1x.png" srcset="images/logo/logo100@1x.png 1x, images/logo/logo100@2x.png 2x, images/logo/logo100@3x.png 3x" alt="logo">
-            </a>
+  <header class="header">
+    <div class="top-panel">
+      <div class="container">
+        <a href="index.html#home">
+          <picture>
+            <source srcset="images/logo/logo35@1x.png 1x, images/logo/logo35@2x.png 2x, images/logo/logo35@3x.png 3x" media="(max-width: 599px)">
+            <source srcset="images/logo/logo70@1x.png 1x, images/logo/logo70@2x.png 2x, images/logo/logo70@3x.png 3x" media=" (min-width: 600px) and (max-width: 960px)">
+            <source srcset="images/logo/logo100@1x.png 1x, images/logo/logo100@2x.png 2x, images/logo/logo100@3x.png 3x">
+            <img src="images/logo/logo100@1x.png" srcset="images/logo/logo100@1x.png 1x, images/logo/>logo100@2x.png 2x, images/logo/Logo100@3x.png 3x" class="logo" alt="logo">
+          </picture>
+        </a>
+        <nav class="menu js-menu">
+	        <ul class="menu__list">
+            <li class="menu__list-item"><a href="index.html#my_works" class="menu__link">My Works</a></li>
+            <li class="menu__list-item"><a href="index.html#my_story" class="menu__link">My Story</a></li>
+            <li class="menu__list-item"><a href="index.html#contact_me" class="menu__link">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="container-project">
+    <div class="project-wrap">
+      <img src="images/project2/1@1x.png" srcset="images/project2/1@1x.png 1x, images/project2/1@2x.png 2x, images/project2/1@3x.png 3x" alt="Mobile mockup with screen of Fitted App">
+    </div>
+    <div class="project-wrap">
+      <img src="images/project2/2@1x.png" srcset="images/project2/2@1x.png 1x, images/project2/2@2x.png 2x, images/project2/2@3x.png 3x" alt="Brief of Fitted App">
+    </div>
+    <div class="project-wrap">
+      <img src="images/project2/3@1x.png" srcset="images/project2/3@1x.png 1x, images/project2/3@2x.png 2x, images/project2/3@3x.png 3x" alt="Low-fidelity paper prototypes for mobile of Fitted App">
+    </div>
+    <div class="project-wrap">
+      <img src="images/project2/4@1x.png" srcset="images/project2/4@1x.png 1x, images/project2/4@2x.png 2x, images/project2/4@3x.png 3x" alt="Low-fidelity paper prototypes for mobile of Fitted App">
+    </div>
+    <div class="project-wrap">
+      <img src="images/project2/5@1x.png" srcset="images/project2/5@1x.png 1x, images/project2/5@2x.png 2x, images/project2/5@3x.png 3x" alt="Low-fidelity paper prototypes for mobile of Fitted App">
+    </div>
+    <div class="project-wrap">
+      <img src="images/project2/6@1x.png" srcset="images/project2/6@1x.png 1x, images/project2/6@2x.png 2x, images/project2/6@3x.png 3x" alt="Mid-fidelity prototypes for mobile of Fitted App">
+    </div>
+    <div class="project-wrap">
+      <img src="images/project2/7@1x.png" srcset="images/project2/7@1x.png 1x, images/project2/7@2x.png 2x, images/project2/7@3x.png 3x" alt="Moodboard of Fitted App">
+    </div>
+    <div class="project-wrap">
+      <img src="images/project2/8@1x.png" srcset="images/project2/8@1x.png 1x, images/project2/8@2x.png 2x, images/project2/8@3x.png 3x" alt="Creating logo for Fitted App">
+    </div>
+    <div class="project-wrap">
+      <img src="images/project2/9@1x.png" srcset="images/project2/9@1x.png 1x, images/project2/9@2x.png 2x, images/project2/9@3x.png 3x" alt="High-fidelity prototypes for mobile of Fitted App">
+    </div>
+    <div class="project-wrap">
+      <img src="images/project2/10@1x.png" srcset="images/project2/10@1x.png 1x, images/project2/10@2x.png 2x, images/project2/10@3x.png 3x" alt="High-fidelity prototypes for desktop of Fitted App">
+    </div>
+    <div class="project-wrap">
+      <img src="images/project2/11@1x.png" srcset="images/project2/11@1x.png 1x, images/project2/11@2x.png 2x, images/project2/11@3x.png 3x" alt="Style guide of Fitted App">
+    </div>
+    <div class="project-wrap">
+      <img src="images/project2/12@1x.png" srcset="images/project2/12@1x.png 1x, images/project2/12@2x.png 2x, images/project2/12@3x.png 3x" alt="Mobile mockups of Fitted App">
+    </div>
+    <div class="project-wrap">
+      <img src="images/project2/13@1x.png" srcset="images/project2/13@1x.png 1x, images/project2/13@2x.png 2x, images/project2/13@3x.png 3x" alt="Mobile and tablet mockups of Fitted App">
+    </div>
+    <div class="project-wrap">
+      <img src="images/project2/15@1x.png" srcset="images/project2/15@1x.png 1x, images/project2/15@2x.png 2x, images/project2/15@3x.png 3x" alt="Resources used for  creating Fitted App">
+    </div>
+  </div>
 
-            <nav>
-		        <ul>
-                    <li><a href="index.html#my_works">My Works</a></li>
-                    <li><a href="index.html#my_story">My Story</a></li>
-                    <li><a href="index.html#contact_me">Contact Me</a></li>
-                </ul>
-            </nav>
-        </div>
-	</header>
-
-  <div>
-    <img src="images/project2/1@1x.png" srcset="images/project2/1@1x.png 1x, images/project2/1@2x.png 2x, images/project2/1@3x.png 3x" alt="Mobile mockup with screen of Fitted App">
-  </div>
-  <div>
-    <img src="images/project2/2@1x.png" srcset="images/project2/2@1x.png 1x, images/project2/2@2x.png 2x, images/project2/2@3x.png 3x" alt="Brief of Fitted App">
-  </div>
-  <div>
-    <img src="images/project2/3@1x.png" srcset="images/project2/3@1x.png 1x, images/project2/3@2x.png 2x, images/project2/3@3x.png 3x" alt="Low-fidelity paper prototypes for mobile of Fitted App">
-  </div>
-  <div>
-    <img src="images/project2/4@1x.png" srcset="images/project2/4@1x.png 1x, images/project2/4@2x.png 2x, images/project2/4@3x.png 3x" alt="Low-fidelity paper prototypes for mobile of Fitted App">
-  </div>
-  <div>
-    <img src="images/project2/5@1x.png" srcset="images/project2/5@1x.png 1x, images/project2/5@2x.png 2x, images/project2/5@3x.png 3x" alt="Low-fidelity paper prototypes for mobile of Fitted App">
-  </div>
-  <div>
-    <img src="images/project2/6@1x.png" srcset="images/project2/6@1x.png 1x, images/project2/6@2x.png 2x, images/project2/6@3x.png 3x" alt="Mid-fidelity prototypes for mobile of Fitted App">
-  </div>
-  <div>
-    <img src="images/project2/7@1x.png" srcset="images/project2/7@1x.png 1x, images/project2/7@2x.png 2x, images/project2/7@3x.png 3x" alt="Moodboard of Fitted App">
-  </div>
-  <div>
-  <img src="images/project2/8@1x.png" srcset="images/project2/8@1x.png 1x, images/project2/8@2x.png 2x, images/project2/8@3x.png 3x" alt="Creating logo for Fitted App">
-  </div>
-  <div>
-    <img src="images/project2/9@1x.png" srcset="images/project2/9@1x.png 1x, images/project2/9@2x.png 2x, images/project2/9@3x.png 3x" alt="High-fidelity prototypes for mobile of Fitted App">
-  </div>
-  <div>
-    <img src="images/project2/10@1x.png" srcset="images/project2/10@1x.png 1x, images/project2/10@2x.png 2x, images/project2/10@3x.png 3x" alt="High-fidelity prototypes for desktop of Fitted App">
-  </div>
-  <div>
-    <img src="images/project2/11@1x.png" srcset="images/project2/11@1x.png 1x, images/project2/11@2x.png 2x, images/project2/11@3x.png 3x" alt="Style guide of Fitted App">
-  </div>
-  <div>
-    <img src="images/project2/12@1x.png" srcset="images/project2/12@1x.png 1x, images/project2/12@2x.png 2x, images/project2/12@3x.png 3x" alt="Mobile mockups of Fitted App">
-  </div>
-  <div>
-    <img src="images/project2/13@1x.png" srcset="images/project2/13@1x.png 1x, images/project2/13@2x.png 2x, images/project2/13@3x.png 3x" alt="Mobile and tablet mockups of Fitted App">
-  </div>
-  <div>
-    <img src="images/project2/15@1x.png" srcset="images/project2/15@1x.png 1x, images/project2/15@2x.png 2x, images/project2/15@3x.png 3x" alt="Resources used for  creating Fitted App">
-  </div>
-
-    <a class="fixedsvg" href="#">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98px" height="98px" viewBox="0 0 98 98" version="1.1">
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <image id="fixedicon" x="0" y="0" width="98" height="98" xlink:href="data:image/png;base64,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"/>
+  <a class="fixed" href="#">
+    <svg class="fixedicon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       viewBox="0 0 474.64 474.64" style="enable-background:new 0 0 474.64 474.64;" xml:space="preserve">
+      <g>
+        <g>
+          <g>
+            <path  d="M247.554,161.534c-3.115-3.115-7.183-4.608-11.283-4.608s-8.168,1.494-11.283,4.608
+            L121.918,264.605c-6.198,6.198-6.198,16.273,0,22.47c6.198,6.198,16.273,6.198,22.47,0l91.883-91.883l91.883,91.883
+            c6.198,6.198,16.273,6.198,22.47,0c6.198-6.198,6.198-16.273,0-22.47L247.554,161.534z"/>
+          </g>
+        </g>
       </g>
     </svg>
   </a>
