@@ -6,6 +6,7 @@ body {
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
 color: #323030;
+background-color: #F5F3FB;
 }
 
 h1 {
@@ -14,7 +15,7 @@ h1 {
 	line-height: 5rem;
 	color: #3B2693;
 	text-align: center;
-	padding-top: 10rem;
+	padding-top: 8rem;
 	padding-bottom: 2rem;
 }
 
@@ -107,6 +108,10 @@ nav ul li a {
 	text-decoration: none;
 }
 
+.title {
+	padding-top: 10rem;
+}
+
 .story {
 	font-size: 0.8125rem;
 	line-height: 1.3rem;
@@ -137,6 +142,30 @@ nav ul li:not(:first-child){
 	margin: 4rem auto auto auto;
 }
 
+.block_gravity {
+	display: flex;
+	align-items: center;
+	height: auto;
+}
+
+.gravity {
+	display: block;
+	margin: 0 auto;
+	width: 12.5rem;
+	height: 12.5rem;
+	fill: #B13C04;
+	animation: rotate 20s infinite linear;
+}
+
+@keyframes rotate {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+.menu h2 {
+	font-weight: 400;
+}
+
 .menu, .menu-social {
 	display: flex;
 	flex-direction: row;
@@ -144,7 +173,6 @@ nav ul li:not(:first-child){
 }
 
 .menu ul {
-	padding-top: 4rem;
 	padding-left: 0;
 	margin-bottom: 0;
 	margin-left: auto;
@@ -234,12 +262,16 @@ nav ul li:not(:first-child){
 	margin-right: 8%;
 	padding: 2rem 3rem 0 3rem;
 	box-sizing: border-box;
-	background-color: #F3F1FA;
+	background-color: #E0D9FB;
+	border-radius: 1rem;
+	-webkit-box-shadow: 0 10px 6px -6px #E8E4F8;
+			-moz-box-shadow: 0 10px 6px -6px #E8E4F8;
+					 box-shadow: 0 10px 6px -6px #E8E4F8;
 }
 
 .mein {
 	display: inline-block;
-	background-color: #F3F1FA;
+	background-color: #E0D9FB;
 	float: right;
 	padding-left: 1rem;
 }
@@ -259,11 +291,11 @@ nav ul li:not(:first-child){
   color: #ffffff;
   border-radius: 0.5rem;
   margin: 2.375rem auto 3.375rem auto;
+	transition: 0.5s background-color;
 }
 
-.download:active {
-  background: #D14807;
-  color: #ffffff;
+.download:hover {
+  background-color: #D14807;
 }
 
 .wrapper {
@@ -318,7 +350,7 @@ form {
 	width: 40rem;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #F3F1FA;
+	background-color: #E0D9FB;
 	border-radius: 1rem;
 	-webkit-box-shadow: 0 10px 6px -6px #E8E4F8;
 			-moz-box-shadow: 0 10px 6px -6px #E8E4F8;
@@ -340,7 +372,7 @@ input:not([type="submit"]) {
 	-webkit-appearance: none;
   font-size: 1.5625rem;
 	line-height: 2.5rem;
-	background-color: #F3F1FA;
+	background-color: #E0D9FB;
   color: #323030;
   padding-top: 1.93rem;
 	outline: none;
@@ -371,11 +403,11 @@ input[type="submit"] {
   color: #ffffff;
   border-radius: 0.5rem;
   margin: 4.375rem 0 4.375rem 0;
+	transition: 0.5s background-color;
 }
 
-input[type="submit"]:active {
-  background: #D14807;
-  color: #ffffff;
+input[type="submit"]:hover {
+  background-color: #D14807;
 }
 
 .menu-social ul {
@@ -505,6 +537,11 @@ footer {
 	 	line-height: 2rem;
 	 	color: #3B2693;
 	 	text-decoration: none;
+	 }
+
+
+	 .title {
+		 padding-top: 2rem;
 	 }
 
 	.mein {
