@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="vieport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon"  href="images/favicon-2.ico" type="image/x-icon">
   <title>Skrepinskaya Natalia UX/UI Designer</title>
   <link rel="stylesheet" type=text/css href="css/normalize.css">
@@ -9,26 +10,25 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|Rokkitt" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <div class="top-panel">
+
+  <header>
       <div class="container">
         <a href="#home">
           <picture>
             <source srcset="images/logo/logo35@1x.png 1x, images/logo/logo35@2x.png 2x, images/logo/logo35@3x.png 3x" media="(max-width: 599px)">
-            <source srcset="images/logo/logo70@1x.png 1x, images/logo/logo70@2x.png 2x, images/logo/logo70@3x.png 3x" media=" (min-width: 600px) and (max-width: 960px)">
-            <source srcset="images/logo/logo100@1x.png 1x, images/logo/logo100@2x.png 2x, images/logo/logo100@3x.png 3x">
+            <source srcset="images/logo/logo70@1x.png 1x, images/logo/logo70@2x.png 2x, images/logo/logo70@3x.png 3x" media="(min-width: 600px) and (max-width: 960px)">
+            <source srcset="images/logo/logo100@1x.png 1x, images/logo/logo100@2x.png 2x, images/logo/logo100@3x.png 3x" media="(min-width: 961px)">
             <img src="images/logo/logo100@1x.png" srcset="images/logo/logo100@1x.png 1x, images/logo/>logo100@2x.png 2x, images/logo/Logo100@3x.png 3x" class="logo" alt="logo">
           </picture>
         </a>
-        <nav class="menu js-menu">
-	        <ul class="menu__list">
-            <li class="menu__list-item"><a href="#my_works" class="menu__link">My Works</a></li>
-            <li class="menu__list-item"><a href="#my_story" class="menu__link">My Story</a></li>
-            <li class="menu__list-item"><a href="#contact_me" class="menu__link">Contact Me</a></li>
+        <nav>
+	        <ul>
+            <li><a href="#my_works">My Works</a></li>
+            <li><a href="#my_story">My Story</a></li>
+            <li><a href="#contact_me">Contact Me</a></li>
           </ul>
         </nav>
       </div>
-    </div>
   </header>
 
   <div id="home">
@@ -37,10 +37,10 @@
     </div>
 
       <div class="menu">
-        <ul class="menu-ad"><!--here I will add svg files in next task-->
-          <li class="ad-item"><h2>UX Design</h2></li>
-          <li class="ad-item"><h2>UI Design</h2></li>
-          <li class="ad-item"><h2>Fronted<br>Development</h2></li>
+        <ul><!--here I will add svg files in next task-->
+          <li><h2>UX Design</h2></li>
+          <li><h2>UI Design</h2></li>
+          <li><h2>Fronted<br>Development</h2></li>
         </ul>
     </div>
   </div>
@@ -58,7 +58,7 @@
            </div>
          </a>
 
-        <a  class="works" href="project2.html"><!--project2-->
+        <a class="works" href="project2.html"><!--project2-->
           <div class="image-block">
             <img src="images/project2/home_page2@1x.png" srcset="images/project2/home_page2@1x.png 1x, images/project2/home_page2@2x.png 2x, images/project2/home_page2@3x.png 3x" alt="Fitted App">
           </div>
@@ -87,23 +87,19 @@
       </div>
   </section>
 
-  <section id="my_story" >  <!--the section #my_story-->
+  <section id="my_story">  <!--the section #my_story-->
       <h1>Hi, I'm Natalia!</h1>
 
           <div class="about">
-
-            <article><img class="mein" src="images/photo/my_photo@1x.png" srcset="images/photo/my_photo@1x.png 1x, images/photo/my_photo@2x.png 2x, images/photo/my_photo@3x.png 3x" alt="Girl">I care intensely about good, useful, and thoroughly thought out user-centred design, creating projects that make people's lives easier.<br><br>My experiences in finance and e-commerce have given me skills that are crucial in the usability design industry. As an accountant, I am self-disciplined and detail-oriented. As a co-founder of e-commerce project, I’m able to create logical and innovative solutions to complex problems based on requirements. Having skills in front-end development, I am not afraid of challenges or thinking outside the box.<br><br>Having lived, studied and worked in different countries across the globe, I possess foreign language skills and intercultural sensibility, which are vital skills in understanding very different groups of users around the world and communicating with international clients and colleagues.<br><br>When I'm not working and studying, I go trekking in mountains, walk with my dogs and do yoga.<br><br>I am based in Bergamo, Italy but am originally from Saint Petersburg, Russia.<br><br>For more information on my work, to get in touch or offer me job opportunities, feel free to contact me and see my resume.
-            </article>
-
+            <p><img class="mein" src="images/photo/my_photo@1x.png" srcset="images/photo/my_photo@1x.png 1x, images/photo/my_photo@2x.png 2x, images/photo/my_photo@3x.png 3x" alt="Girl">I care intensely about good, useful, and thoroughly thought out user-centred design, creating projects that make people's lives easier.<br><br>My experiences in finance and e-commerce have given me skills that are crucial in the usability design industry. As an accountant, I am self-disciplined and detail-oriented. As a co-founder of e-commerce project, I’m able to create logical and innovative solutions to complex problems based on requirements. Having skills in front-end development, I am not afraid of challenges or thinking outside the box.<br><br>Having lived, studied and worked in different countries across the globe, I possess foreign language skills and intercultural sensibility, which are vital skills in understanding very different groups of users around the world and communicating with international clients and colleagues.<br><br>When I'm not working and studying, I go trekking in mountains, walk with my dogs and do yoga.<br><br>I am based in Bergamo, Italy but am originally from Saint Petersburg, Russia.<br><br>For more information on my work, to get in touch or offer me job opportunities, feel free to contact me and see my resume.
+            </p>
 
             <div class="download-cv"> <!--button to view or download resume-->
               <button class="download" onClick="window.location. href='images/cv/Skrepinskaya_Natalia_Resume copy.pdf'">Download</button>
             </div>
          </div>
 
-
-
-    <h1>About Me</h1>
+    <h2>About Me</h2>
 
     <div class="wrapper">
       <div class="line_f">
@@ -112,28 +108,30 @@
            <source srcset="images/about_me/1_about_me200@1x.png 1x, images/about_me/1_about_me200@2x.png 2x, images/about_me/1_about_me200@3x.png 3x" media="(max-width: 599px)">
            <source srcset="images/about_me/1_about_me300@1x.png 1x, images/about_me/1_about_me300@2x.png 2x, images/about_me/1_about_me300@3x.png 3x" media="(min-width: 600px) and (max-width: 1023px)">
            <source srcset="images/about_me/1_about_me400@1x.png 1x, images/about_me/1_about_me400@2x.png 2x, images/about_me/1_about_me400@3x.png 3x" media="(min-width: 1024px) and (max-width: 1366px)">
-           <source srcset="images/about_me/1_about_me600@1x.png 1x, images/about_me/1_about_me600@2x.png 2x, images/about_me/1_about_me600@3x.png 3x">
-           <img src="images/about_me/1_about_me600@1x.png" srcset="images/about_me/1_about_me600@1x.png 1x, images/about_me/1_about_me600@2x.png 2x, images/about_me/1_about_me600@3x.png 3x" alt="Guys with laptop">
+           <source srcset="images/about_me/1_about_me600@1x.png 1x, images/about_me/1_about_me600@2x.png 2x, images/about_me/1_about_me600@3x.png 3x" media="(min-width: 1367px)">
+           <img class="line_s_picture" src="images/about_me/1_about_me600@1x.png" srcset="images/about_me/1_about_me600@1x.png 1x, images/about_me/1_about_me600@2x.png 2x, images/about_me/1_about_me600@3x.png 3x" alt="Guys with laptop">
          </picture>
 		   </div>
+
         <div class="story">
 		      <h3>February 2015</h3>
 		      <p>I was been involved in web design industry from 2015 as a co-founder of e-commerce start-up, I have experience in cooperating remotely with a multi-national team of 10 people and easily adapt to dynamic development projects. I headed the development of company's brand standards and I led in identification UI/UX problems of the project according to user persona and troubleshoot in UX issues.</p>
 	      </div>
-      </div>
+    </div>
 
     <div class="line_f">
       <div class="story">
 		    <h3>April 2017</h3>
 		    <p>I become a graduate of front-end development course, I have experience coding in HTML5, CSS3 and basic JavaScript and web design course. Developed separate snippets of code for the responsive and mobile front-end development. Built web page by ready design. Produced responsive web design for 1 real-world project.</p>
 	    </div>
+
         <div class="pic">
           <picture>
             <source srcset="images/about_me/2_about_me200@1x.png 1x, images/about_me/2_about_me200@2x.png 2x, images/about_me/2_about_me200@3x.png 3x" media="(max-width: 599px)">
             <source srcset="images/about_me/2_about_me300@1x.png 1x, images/about_me/2_about_me300@2x.png 2x, images/about_me/2_about_me300@3x.png 3x" media="(min-width: 600px) and (max-width: 1023px)">
             <source srcset="images/about_me/2_about_me400@1x.png 1x, images/about_me/2_about_me400@2x.png 2x, images/about_me/2_about_me400@3x.png 3x" media="(min-width: 1024px) and (max-width: 1366px)">
-            <source srcset="images/about_me/2_about_me600@1x.png 1x, images/about_me/2_about_me600@2x.png 2x, images/about_me/2_about_me600@3x.png 3x">
-            <img src="images/about_me/2_about_me600@1x.png" srcset="images/about_me/2_about_me600@1x.png 1x, images/about_me/2_about_me600@2x.png 2x, images/about_me/2_about_me600@3x.png 3x" alt="Computer">
+            <source srcset="images/about_me/2_about_me600@1x.png 1x, images/about_me/2_about_me600@2x.png 2x, images/about_me/2_about_me600@3x.png 3x" media="(min-width: 1367px)">
+            <img class="line_f_picture" src="images/about_me/2_about_me600@1x.png" srcset="images/about_me/2_about_me600@1x.png 1x, images/about_me/2_about_me600@2x.png 2x, images/about_me/2_about_me600@3x.png 3x" alt="Computer">
           </picture>
         </div>
     </div>
@@ -144,10 +142,11 @@
           <source srcset="images/about_me/3_about_me200@1x.png 1x, images/about_me/3_about_me200@2x.png 2x, images/about_me/3_about_me200@3x.png 3x" media="(max-width: 599px)">
           <source srcset="images/about_me/3_about_me300@1x.png 1x, images/about_me/3_about_me300@2x.png 2x, images/about_me/3_about_me300@3x.png 3x" media="(min-width: 600px) and (max-width: 1023px)">
           <source srcset="images/about_me/3_about_me400@1x.png 1x, images/about_me/3_about_me400@2x.png 2x, images/about_me/3_about_me400@3x.png 3x" media="(min-width: 1024px) and (max-width: 1366px)">
-          <source srcset="images/about_me/3_about_me600@1x.png 1x, images/about_me/3_about_me600@2x.png 2x, images/about_me/3_about_me600@3x.png 3x">
-          <img src="images/about_me/3_about_me600@1x.png" srcset="images/about_me/3_about_me600@1x.png 1x, images/about_me/3_about_me600@2x.png 2x, images/about_me/3_about_me600@3x.png 3x" alt="Computer">
+          <source srcset="images/about_me/3_about_me600@1x.png 1x, images/about_me/3_about_me600@2x.png 2x, images/about_me/3_about_me600@3x.png 3x" media="(min-width: 1367px)">
+          <img class="line_s_picture" src="images/about_me/3_about_me600@1x.png" srcset="images/about_me/3_about_me600@1x.png 1x, images/about_me/3_about_me600@2x.png 2x, images/about_me/3_about_me600@3x.png 3x" alt="Computer">
         </picture>
 		  </div>
+
       <div class="story">
 		    <h3>December 2017</h3>
 		    <p>I have been working a freelance as UI/UX designer, web designer and front-end developer. I am currently including data visualisation for a presentation of my work remotely for a customer for whom I am creating a responsive e-commerce project based on his Instagram profile @presents_decore.</p>
@@ -159,31 +158,34 @@
 		    <h3>March 2018</h3>
 		    <p>As a recent graduate of CareerFoundry's UX Design Course in English, I have experience in designing 3 app projects from beginning through user persona development and sitemap to prototyping, GUI design, usability testing and final mockups. For UX/UI design I use Sketch and Adobe Creative Cloud apps, Axure, Invision, Optimal Workshop, UsabilityHub, GetFeedback, ManageBag.</p>
 	    </div>
+
 		  <div class="pic">
         <picture>
           <source srcset="images/about_me/4_about_me200@1x.png 1x, images/about_me/4_about_me200@2x.png 2x, images/about_me/4_about_me200@3x.png 3x" media="(max-width: 599px)">
           <source srcset="images/about_me/4_about_me300@1x.png 1x, images/about_me/4_about_me300@2x.png 2x, images/about_me/4_about_me300@3x.png 3x" media="(min-width: 600px) and (max-width: 1023px)">
           <source srcset="images/about_me/4_about_me400@1x.png 1x, images/about_me/4_about_me400@2x.png 2x, images/about_me/4_about_me400@3x.png 3x" media="(min-width: 1024px) and (max-width: 1366px)">
-          <source srcset="images/about_me/4_about_me600@1x.png 1x, images/about_me/4_about_me600@2x.png 2x, images/about_me/4_about_me600@3x.png 3x">
-          <img src="images/about_me/4_about_me600@1x.png" srcset="images/about_me/4_about_me600@1x.png 1x, images/about_me/4_about_me600@2x.png 2x, images/about_me/4_about_me600@3x.png 3x" alt="Affinity map">
+          <source srcset="images/about_me/4_about_me600@1x.png 1x, images/about_me/4_about_me600@2x.png 2x, images/about_me/4_about_me600@3x.png 3x" media="(min-width: 1367px)">
+          <img class="line_f_picture" src="images/about_me/4_about_me600@1x.png" srcset="images/about_me/4_about_me600@1x.png 1x, images/about_me/4_about_me600@2x.png 2x, images/about_me/4_about_me600@3x.png 3x" alt="Affinity map">
         </picture>
 		  </div>
 	  </div>
 
     <div class="line_f">
-		  <div class="pic">
-        <picture>
-          <source srcset="images/about_me/3_about_me200@1x.png 1x, images/about_me/3_about_me200@2x.png 2x, images/about_me/3_about_me200@3x.png 3x" media="(max-width: 599px)">
-          <source srcset="images/about_me/3_about_me300@1x.png 1x, images/about_me/3_about_me300@2x.png 2x, images/about_me/3_about_me300@3x.png 3x" media="(min-width: 600px) and (max-width: 1366px)">
-          <source srcset="images/about_me/3_about_me600@1x.png 1x, images/about_me/3_about_me600@2x.png 2x, images/about_me/3_about_me600@3x.png 3x">
-          <img src="images/about_me/3_about_me600@1x.png" srcset="images/about_me/3_about_me600@1x.png 1x, images/about_me/3_about_me600@2x.png 2x, images/about_me/3_about_me600@3x.png 3x" alt="Computer">
-        </picture>
-		  </div>
+     <div class="pic">
+       <picture>
+         <source srcset="images/about_me/3_about_me200@1x.png 1x, images/about_me/3_about_me200@2x.png 2x, images/about_me/3_about_me200@3x.png 3x" media="(max-width: 599px)">
+         <source srcset="images/about_me/3_about_me300@1x.png 1x, images/about_me/3_about_me300@2x.png 2x, images/about_me/3_about_me300@3x.png 3x" media="(min-width: 600px) and (max-width: 1023px)">
+         <source srcset="images/about_me/3_about_me400@1x.png 1x, images/about_me/3_about_me400@2x.png 2x, images/about_me/3_about_me400@3x.png 3x" media="(min-width: 1024px) and (max-width: 1366px)">
+         <source srcset="images/about_me/3_about_me600@1x.png 1x, images/about_me/3_about_me600@2x.png 2x, images/about_me/3_about_me600@3x.png 3x" media="(min-width: 1367px)" >
+         <img class="line_s_picture" src="images/about_me/3_about_me600@1x.png" srcset="images/about_me/3_about_me600@1x.png 1x, images/about_me/3_about_me600@2x.png 2x, images/about_me/3_about_me600@3x.png 3x" alt="Computer">
+       </picture>
+     </div>
+
       <div class="story">
-		    <h3>Present</h3>
-		    <p>My story contunues...</p>
+        <h3>March 2018</h3>
+		    <p>My story continues...</p>
       </div>
-    </div>
+      </div>
   </div>
   </section>
 
@@ -209,10 +211,10 @@
 
     <div>
         <h1>Follow Me</h1>
-      <div class="menu">
-      <ul class=menu-social>
-        <li class="icon-item">
-          <a class="social_icon" target="_blank" href="https://www.linkedin.com/in/natalia-skrepinskaya">
+      <div class="menu-social">
+      <ul>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/natalia-skrepinskaya">
             <svg class="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 viewBox="0 0 486.392 486.392" style="enable-background:new 0 0 486.392 486.392;" xml:space="preserve">
               <g>
@@ -231,8 +233,8 @@
           </a>
         </li>
 
-        <li class="icon-item">
-          <a class="social_icon" target="_blank" href="https://www.behance.net/beniprodux09bc">
+        <li>
+          <a target="_blank" href="https://www.behance.net/beniprodux09bc">
             <svg class="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 viewBox="0 0 97.75 97.75" style="enable-background:new 0 0 97.75 97.75;" xml:space="preserve">
               <g>
@@ -251,8 +253,8 @@
           </a>
         </li>
 
-        <li class="icon-item">
-          <a class="social_icon" target="_blank" href="https://github.com/NataliaSkrepinskaya">
+        <li>
+          <a target="_blank" href="https://github.com/NataliaSkrepinskaya">
             <svg class="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	  viewBox="0 0 438.549 438.549" style="enable-background:new 0 0 438.549 438.549;"
             	 xml:space="preserve">
@@ -282,8 +284,8 @@
           </a>
         </li>
 
-        <li class="icon-item">
-          <a class="social_icon" target="_blank" href="https://www.facebook.com/reghina.felice">
+        <li>
+          <a target="_blank" href="https://www.facebook.com/reghina.felice">
             <svg class="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 viewBox="0 0 112.196 112.196" style="enable-background:new 0 0 112.196 112.196;" xml:space="preserve">
               <g>
