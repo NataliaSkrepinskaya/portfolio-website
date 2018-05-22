@@ -585,9 +585,7 @@ footer {
 	}
 
 	.mein {
-		content: "";
-		display: block;
-		clear: both;
+		display: none;
 	}
 
 	.container {
