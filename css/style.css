@@ -419,7 +419,7 @@ footer {
 .container-project {
 	display: flex;
 	flex-direction: column;
-	margin-top: 10.25%;
+	margin-top: 10.25rem;
 }
 
 .project-wrap {
