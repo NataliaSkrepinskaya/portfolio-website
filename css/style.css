@@ -82,7 +82,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	max-width: 120rem;
-	height: 7.875rem;
+	height: 5rem;
 	margin: 0rem auto;
 	padding: 0rem;
 }
@@ -107,8 +107,8 @@ nav ul {
 
 .main-link {
 	display: inline-block;
-	width: 10rem;
-  height: 3.125rem;
+	width: 7.8rem;
+  height: 3rem;
   transition: background-position-x 0.9s linear;
   text-align: center;
 	vertical-align: middle;
@@ -116,8 +116,8 @@ nav ul {
 }
 
 nav ul li a {
-	font-size:1.5625rem;
-	line-height: 2.5rem;
+	font-size: 1.25rem;
+	line-height: 1.8rem;
 	color: #3B2693;
 	text-decoration: none;
 	transition: all 0.45s;
@@ -416,19 +416,20 @@ footer {
 	position: relative;
 	width: 100%;
   height: 4rem;
-	padding-top: 3.5rem;
+	padding-top: 2rem;
 	text-align: center;
 }
 
 .footer-panel {
 	height: 4rem;
-	padding-top: 2rem;
+	padding-top: 1rem;
 	background-color: white;
 
 	box-shadow:0px -4px 6px 0px #E8E4F8;
 	-webkit-box-shadow:0px -4px 6px 0px #E8E4F8;
 	-moz-box-shadow:0px -4px 6px 0px #E8E4F8;
 }
+
 /* ICON FIXED */
 .fixed {
   display: none;
@@ -506,10 +507,6 @@ footer {
 }
 
 @media (max-width: 1199px){
-	.container {
-		height: 8rem;
-	}
-
 	.main-link {
 		width: auto;
 		height: auto;
@@ -527,20 +524,55 @@ footer {
 	.content-block {
 		height: 40%;
 	}
+
+	.pic {
+		width: 40%;
+	}
+	.story {
+		width: 60%;
+	}
 }
 
 @media (max-width: 991px) {
-	html {
-		font-size: 10px;
+	p, h3, .story, .about p {
+		font-size: 0.875rem;
+		line-height: 1.4rem;
 	}
 
+	.main-link {
+		width: auto;
+		height: auto;
+	}
+
+	.main-link:hover {
+		background: none;
+		border-bottom:  0.078rem solid #380DE4;
+	}
+
+	.menu ul li:not(:first-child){
+		margin-left: 8.75rem;
+	}
+
+	.project-text {
+		width: 60%;
+	}
+
+	.pic {
+		width: 50%;
+	}
+	.story {
+		width: 50%;
+	}
+}
+
+@media (max-width:767px) {
 	p, h3, .story, .about p {
-		font-size: 1.4rem;
-		line-height: 2.24rem;
+		font-size: 1rem;
+		line-height: 1.6rem;
 	}
 
 	.container {
-		height: 8rem;
+		height: 4rem;
 	}
 
 	.main-link {
@@ -553,12 +585,15 @@ footer {
 		border-bottom:  0.125rem solid #380DE4;
 	}
 
-	.project-text {
-		width: 60%;
+	.menu ul {
+		display: flex;
+		flex-direction: column;
 	}
-}
 
-@media (max-width:767px) {
+	.menu ul li:not(:first-child){
+		margin-left: 0rem;
+	}
+
 	.mein {
 		display: none;
 	}
@@ -572,16 +607,61 @@ footer {
 	.project-text {
 		width: 70%;
 	}
+
+	.pic {
+		width: 50%;
+	}
+	.story {
+		width: 50%;
+	}
+
+	.about {
+		margin: 0% 4%;
+	}
+
+	.about p {
+		margin-top: 4%;
+	}
+
+	.content-block {
+		height: 50%;
+	}
+
+	.image-block {
+		height: 50%;
+	}
+
+
+	form {
+		width: 90%;
+	}
+
+	.group {
+		width: 90%;
+
 }
 
 @media (max-width: 575px) {
-   html {
-	   font-size: 8px;
-   }
+	h1 {
+	 font-size: 2rem;
+	 line-height: 2.12rem;
+	 padding: 4rem 0rem 1rem 0rem;
+	}
+
+	h2 {
+	 font-size: 1rem;
+	 line-height: 1.6rem;
+	}
+
+	#my_story h2, #contact_me h2 {
+	 font-size: 2rem;
+	 line-height: 2.12rem;
+	 padding: 5rem 0rem 1rem 0rem;
+	}
 
 	 p, h3, .story, .about p {
-		 font-size: 1.75rem;
-		 line-height: 2.8rem;
+		 font-size: 1rem;
+		 line-height: 1.6rem;
 	 }
 
 	 h3 {
@@ -589,34 +669,28 @@ footer {
 	 }
 
 	 nav ul li a {
-		 font-size: 1.75rem;
-		 line-height: 2.8rem;
+		 font-size: 0.8125rem;
+		 line-height: 1.3rem;
 	 }
 
-	 input:not([type="submit"]) {
-		 font-size: 1.75rem;
-		 line-height: 2.8rem;
-	 }
-
-	 input[type="submit"] {
-		 font-size: 1.75rem;
-		 line-height: 2.8rem;
-		 letter-spacing: 0.145rem;
-	 }
 
 /* HEADER */
+  .container {
+		height: 3rem;
+	}
+
   .main-link {
 		width: auto;
 		height: auto;
 	}
 
 	.main-link {
-		margin-left: 1.5rem;
+		margin-left: 0.75rem;
 	}
 
 	.main-link:hover {
 		background: none;
-		border-bottom:  0.125rem solid #380DE4;
+		border-bottom:  0.1rem solid #380DE4;
 	}
 
 	header {
@@ -624,7 +698,7 @@ footer {
 	 }
 /* HOME*/
 	 .title {
-		 padding-top: 2rem;
+		 padding-top: 1rem;
 	 }
 
 	.mein {
@@ -647,7 +721,7 @@ footer {
 	}
 
 	.main_p {
-		padding: 0rem 1rem;
+		padding: 0rem 0.5rem;
 	}
 /* MY WORKS*/
 	.my-works {
@@ -667,15 +741,20 @@ footer {
 	}
 
 	.image-block {
-		height: 68%;
+		height: 58%;
 	}
 
 	.content-block {
-		height: 32%;
+		height: 42%;
 	}
 /* MY STORY */
 	.about {
-	  margin: 0rem auto;
+	  margin: 0% 4%;
+		padding: 3rem 2rem 0rem 2rem;
+	}
+
+	.about p {
+		margin-top: 4%;
 	}
 
 	.line_f:not(:first-child), .line_f:not(:nth-child(2)) {
@@ -692,23 +771,75 @@ footer {
 	}
 
 	.pic, .story {
-		width: 80%;
+		width: 90%;
 	  margin: 0rem auto;
 	}
 
 	.pic picture img:nth-child(odd)  {
 	  margin: 0rem auto;
 	}
+/* CONTACT ME */
+	form {
+		width: 90%;
+	}
+
+	.group {
+		width: 90%;
+	}
+
+	input:not([type="submit"]) {
+	  padding-top: 0.8rem;
+	}
+
+	label {
+		font-size: 1.25rem;
+		padding-top: 1.5rem;
+	}
+
+
+	input[type="submit"] {
+		margin: 3rem 0 3rem 0;
+	}
+
+	.menu-social ul {
+		padding: 1rem 0rem 2rem 0rem;
+	}
+
+	.menu-social ul li:not(:first-child){
+		margin-left: 2rem;
+	}
+
+	.icon {
+		width: 2.75rem;
+		height: 2.75rem;
+	}
+
+  footer {
+		height: 3rem;
+	}
+
+	.footer-panel {
+		height: 3rem;
+		padding-top: 0.25rem;
+	}
 
 /* ICON FIXED */
 	.icon {
-		width: 5rem;
-		height: 5rem;
+		width: 2.5rem;
+		height: 2.5rem;
 		fill: #F4550A;
 	}
 
 	.fixed {
 		display: inline-block;
+	  bottom: 1.562rem;
+	  right: 1rem;
+	}
+
+	.fixedicon {
+		width: 3.125rem;
+		height: 3.125rem;
+		fill: #A4A3A9;
 	}
 /* PAGES PROJECT1-PROJECT4 */
   .container-project {
@@ -718,7 +849,7 @@ footer {
    }
 
 	 .project-link {
-	 	 margin-left: 23rem;
+	 	 margin-left: 11.5rem;
 	 }
 
 	 .project-wrap {
@@ -727,7 +858,7 @@ footer {
 
 	 .title-project {
 	 	margin-top: 0rem;
-	 	padding-top: 6rem;
+	 	padding-top: 3rem;
 	 }
 
 	 .project-text {
