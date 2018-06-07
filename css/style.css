@@ -507,6 +507,7 @@ footer {
 }
 
 @media (max-width: 1199px){
+	/* HEADER */
 	.main-link {
 		width: auto;
 		height: auto;
@@ -517,6 +518,7 @@ footer {
 		border-bottom:  0.125rem solid #380DE4;
 	}
 
+/* MY WORKS */
 	.image-block {
 		height: 60%;
 	}
@@ -525,6 +527,7 @@ footer {
 		height: 40%;
 	}
 
+/* MY STORY */
 	.pic {
 		width: 40%;
 	}
@@ -534,11 +537,13 @@ footer {
 }
 
 @media (max-width: 991px) {
+	/* FONTS */
 	p, h3, .story, .about p {
 		font-size: 0.875rem;
 		line-height: 1.4rem;
 	}
 
+/* HEADER */
 	.main-link {
 		width: auto;
 		height: auto;
@@ -553,24 +558,27 @@ footer {
 		margin-left: 8.75rem;
 	}
 
-	.project-text {
-		width: 60%;
-	}
-
+/* MY STORY */
 	.pic {
 		width: 50%;
 	}
 	.story {
 		width: 50%;
 	}
+
+/* PAGES PROJECT1-PROJECT4 */
+	.project-text {
+		width: 60%;
+	}
 }
 
 @media (max-width:767px) {
+	/* FONTS */
 	p, h3, .story, .about p {
 		font-size: 1rem;
 		line-height: 1.6rem;
 	}
-
+/* HEADER */
 	.container {
 		height: 4rem;
 	}
@@ -594,6 +602,7 @@ footer {
 		margin-left: 0rem;
 	}
 
+	/* MY STORY */
 	.mein {
 		display: none;
 	}
@@ -604,17 +613,6 @@ footer {
 		width: 100%;
 	}
 
-	.project-text {
-		width: 70%;
-	}
-
-	.pic {
-		width: 50%;
-	}
-	.story {
-		width: 50%;
-	}
-
 	.about {
 		margin: 0% 4%;
 	}
@@ -623,6 +621,7 @@ footer {
 		margin-top: 4%;
 	}
 
+/* MY WORKS */
 	.content-block {
 		height: 50%;
 	}
@@ -631,6 +630,13 @@ footer {
 		height: 50%;
 	}
 
+/*MY STORY */
+	.pic {
+		width: 50%;
+	}
+	.story {
+		width: 50%;
+	}
 
 	form {
 		width: 90%;
@@ -638,10 +644,15 @@ footer {
 
 	.group {
 		width: 90%;
-
 }
 
+/* PAGES PROJECT1-PROJECT4 */
+	.project-text {
+		width: 70%;
+	}
+
 @media (max-width: 575px) {
+	/* FONTS */
 	h1 {
 	 font-size: 2rem;
 	 line-height: 2.12rem;
@@ -673,7 +684,6 @@ footer {
 		 line-height: 1.3rem;
 	 }
 
-
 /* HEADER */
   .container {
 		height: 3rem;
@@ -696,20 +706,11 @@ footer {
 	header {
 		 position: relative;
 	 }
-/* HOME*/
+
+/* HOME */
 	 .title {
 		 padding-top: 1rem;
 	 }
-
-	.mein {
-		display: none;
-	}
-
-	.mein-1 {
-		display: inline-block;
-		height: auto;
-		width: 100%;
-	}
 
 	.menu ul {
 		display: flex;
@@ -723,6 +724,7 @@ footer {
 	.main_p {
 		padding: 0rem 0.5rem;
 	}
+
 /* MY WORKS*/
 	.my-works {
 		margin: 0%;
@@ -747,6 +749,7 @@ footer {
 	.content-block {
 		height: 42%;
 	}
+
 /* MY STORY */
 	.about {
 	  margin: 0% 4%;
@@ -755,6 +758,16 @@ footer {
 
 	.about p {
 		margin-top: 4%;
+	}
+
+	.mein {
+		display: none;
+	}
+
+	.mein-1 {
+		display: inline-block;
+		height: auto;
+		width: 100%;
 	}
 
 	.line_f:not(:first-child), .line_f:not(:nth-child(2)) {
@@ -778,6 +791,7 @@ footer {
 	.pic picture img:nth-child(odd)  {
 	  margin: 0rem auto;
 	}
+
 /* CONTACT ME */
 	form {
 		width: 90%;
@@ -796,7 +810,6 @@ footer {
 		padding-top: 1.5rem;
 	}
 
-
 	input[type="submit"] {
 		margin: 3rem 0 3rem 0;
 	}
@@ -814,6 +827,7 @@ footer {
 		height: 2.75rem;
 	}
 
+/* FOOTER */
   footer {
 		height: 3rem;
 	}
@@ -841,6 +855,7 @@ footer {
 		height: 3.125rem;
 		fill: #A4A3A9;
 	}
+
 /* PAGES PROJECT1-PROJECT4 */
   .container-project {
     display: flex;
