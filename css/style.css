@@ -326,12 +326,20 @@ form {
 					 box-shadow: 0 10px 6px -6px #E8E4F8;
 }
 
-.group {
+.group, .group-email {
 	width: 30rem;
 	margin: 0rem auto;
 	display: flex;
 	flex-direction: column;
 	border-bottom: 0.0625rem solid #A4A3A9;
+}
+
+.group-email.is_green {
+	border-bottom: 0.0625rem solid green;
+}
+
+.group-email.is_red {
+	border-bottom: 0.0625rem solid red;
 }
 
 input:not([type="submit"]) {
