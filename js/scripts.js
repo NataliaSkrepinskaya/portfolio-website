@@ -10,10 +10,10 @@ $("input[type=email]").on("blur", function () {  //validation correct email//
   if (email.length > 0
   && (email.match(/.+?\@.+/g) || []).length !== 1) {
     console.log("invalid");
-    alert("Your email is incorrect!");
-    $(".group-email").addClass("is_red")
+    window.alert("Your email is incorrect!"); //if the email is uncorrect adding message//
+    $(".group-email").addClass("is_red") //if the email is uncorrect adding the red bottom-border//
   } else {
     console.log("valid");
-    $(".group-email").addClass("is_green")
+    $(".group-email").removeClass("is_red").addClass("is_green") //if the email is correct adding the green bottom-border//
   }
 });
