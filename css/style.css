@@ -326,7 +326,7 @@ form {
 					 box-shadow: 0 10px 6px -6px #E8E4F8;
 }
 
-.group, .group-email {
+.group, .group-email, .group-name {
 	width: 30rem;
 	margin: 0rem auto;
 	display: flex;
@@ -334,7 +334,7 @@ form {
 	border-bottom: 0.0625rem solid #A4A3A9;
 }
 
-.group-email.is_green {
+.group-email.is_green, .group-name.is_green {
 	border-bottom: 0.0625rem solid green;
 }
 

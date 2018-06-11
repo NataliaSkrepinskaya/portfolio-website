@@ -6,6 +6,7 @@ console.log("%s has %d %s aspects. I describe it as %s, %s and %s.", "Web design
 
 $("input[type=email]").on("blur", function () {  //validation correct email//
   let email = $(this).val();
+  let name = $(this).val();
 
   if (email.length > 0
   && (email.match(/.+?\@.+/g) || []).length !== 1) {
@@ -16,4 +17,11 @@ $("input[type=email]").on("blur", function () {  //validation correct email//
     console.log("valid");
     $(".group-email").removeClass("is_red").addClass("is_green") //if the email is correct adding the green bottom-border//
   }
+
+  if (name.lenght > 0) {
+    console.log ("valid")
+  } else {
+    $(".group-name").addClass("is_green")
+  }
+
 });
