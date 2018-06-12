@@ -338,7 +338,7 @@ form {
 	border-bottom: 0.0625rem solid green;
 }
 
-.group-email.is_red {
+.group-email.is_red, .group-name.is_red {
 	border-bottom: 0.0625rem solid red;
 }
 
