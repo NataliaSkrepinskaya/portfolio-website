@@ -7,7 +7,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #323030;
-  background-color: #F5F3FB;
+  background: linear-gradient(to bottom right, #F5F3FB, #DFD9F8);
 	margin: 0px;
 }
 
@@ -19,6 +19,7 @@ h1 {
 	color: #3B2693;
 	text-align: center;
 	padding: 8rem 0rem 2rem 0rem;
+	text-transform: uppercase;
 }
 
 .main_p h1{
@@ -38,11 +39,16 @@ h2 {
 	color: #3B2693;
 	text-align: center;
 	padding: 10rem 0rem 2rem 0rem;
+	text-transform: uppercase;
 }
 
 h3, p {
 	font-size: 1.25rem;
 	line-height: 2rem;
+}
+
+h3 {
+	text-transform: uppercase;
 }
 
 .about p{
@@ -61,6 +67,7 @@ h3, p {
 	font-weight: 300;
 	font-size: 1rem;
 	line-height: 1.6rem;
+	color: white;
 }
 /* HEADER */
 header {
@@ -153,7 +160,9 @@ nav ul li a {
 
 /* HOME */
 .title {
-	padding-top: 10rem;
+	padding-top: 8rem;
+	font-size: 4rem;
+	line-height: 6.4rem;
 }
 
 .main_p {
@@ -162,11 +171,7 @@ nav ul li a {
 
 .title {
 	text-align: center;
-	margin: 8% 8% auto 8%;
-}
-
-.menu h2 {
-	font-weight: 400;
+	margin: 8% auto auto auto;
 }
 
 .menu, .menu-social {
@@ -177,7 +182,7 @@ nav ul li a {
 
 .menu ul {
 	padding-left: 0;
-	margin: 0rem auto;
+	margin: 0rem auto 2rem auto;
   list-style: none;
 }
 
@@ -185,6 +190,12 @@ nav ul li a {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
+}
+
+.menu h2 {
+	text-transform: lowercase;
+	font-weight: 400;
+
 }
 
 .menu ul li:not(:first-child){
@@ -217,7 +228,7 @@ nav ul li a {
 }
 
 .image-block {
-	height: 70%;
+	height: 65%;
 	flex-grow: 1;
 }
 
@@ -230,8 +241,8 @@ nav ul li a {
 }
 
 .content-block {
-	height: 30%;
 	flex-grow: 1;
+	height: 35%;
 	padding: 1rem;
 	border-bottom-left-radius: 1rem;
 	border-bottom-right-radius: 1rem;
@@ -319,11 +330,11 @@ nav ul li a {
 form {
 	width: 40rem;
 	margin: 0rem auto;
-	background-color: #E0D9FB;
+	background-color: #D3C9F9;
 	border-radius: 1rem;
-	-webkit-box-shadow: 0 10px 6px -6px #E8E4F8;
-			-moz-box-shadow: 0 10px 6px -6px #E8E4F8;
-					 box-shadow: 0 10px 6px -6px #E8E4F8;
+	-webkit-box-shadow: 0 10px 6px -6px #D8D1F6;
+			-moz-box-shadow: 0 10px 6px -6px #D8D1F6;
+					 box-shadow: 0 10px 6px -6px #D8D1F6;
 }
 
 .group, .group-email, .group-name {
@@ -348,7 +359,7 @@ input:not([type="submit"]) {
 	-webkit-appearance: none;
   font-size: 1.5625rem;
 	line-height: 2.5rem;
-	background-color: #E0D9FB;
+	background-color: #D3C9F9;
   color: #323030;
   padding-top: 1.93rem;
 	outline: none;
@@ -375,6 +386,7 @@ input[type="submit"] {
   height: 3.125rem;
   text-transform: uppercase;
   font-size: 1.5rem;
+	font-weight: 500;
   letter-spacing: 0.125rem;
   color: #ffffff;
   border-radius: 0.5rem;
@@ -431,11 +443,7 @@ footer {
 .footer-panel {
 	height: 4rem;
 	padding-top: 1rem;
-	background-color: white;
-
-	box-shadow:0px -4px 6px 0px #E8E4F8;
-	-webkit-box-shadow:0px -4px 6px 0px #E8E4F8;
-	-moz-box-shadow:0px -4px 6px 0px #E8E4F8;
+	background-color: #110640;
 }
 
 /* ICON FIXED */
@@ -526,6 +534,16 @@ footer {
 		border-bottom:  0.125rem solid #380DE4;
 	}
 
+	.menu ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.menu ul li:not(:first-child){
+		margin-left: 0rem;
+	}
+
+
 /* MY WORKS */
 	.image-block {
 		height: 60%;
@@ -565,6 +583,22 @@ footer {
 	.menu ul li:not(:first-child){
 		margin-left: 8.75rem;
 	}
+
+	.menu ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.menu ul li:not(:first-child){
+		margin-left: 0rem;
+	}
+
+	.title {
+		padding-top: 5rem;
+		font-size: 3rem;
+		line-height: 3.8rem;
+	}
+
 
 /* MY STORY */
 	.pic {
@@ -610,6 +644,12 @@ footer {
 		margin-left: 0rem;
 	}
 
+	.title {
+		padding-top: 5rem;
+		font-size: 2rem;
+		line-height: 3.2rem;
+	}
+
 	/* MY STORY */
 	.mein {
 		display: none;
@@ -650,14 +690,23 @@ footer {
 		width: 90%;
 	}
 
-	.group {
+	.group, .group-email, .group-name {
 		width: 90%;
 }
 
 /* PAGES PROJECT1-PROJECT4 */
+  .project-link {
+    margin-left: 20rem;
+  }
+
 	.project-text {
 		width: 70%;
 	}
+
+	.project-wrap {
+		width: 100%;
+	}
+}
 
 @media (max-width: 575px) {
 	/* FONTS */
@@ -668,8 +717,8 @@ footer {
 	}
 
 	h2 {
-	 font-size: 1rem;
-	 line-height: 1.6rem;
+	 font-size: 1.5rem;
+	 line-height: 2.4rem;
 	}
 
 	#my_story h2, #contact_me h2 {
@@ -718,6 +767,8 @@ footer {
 /* HOME */
 	 .title {
 		 padding-top: 1rem;
+		 font-size: 2rem;
+		 line-height: 3.2rem;
 	 }
 
 	.menu ul {
@@ -751,11 +802,11 @@ footer {
 	}
 
 	.image-block {
-		height: 58%;
+		height: 55%;
 	}
 
 	.content-block {
-		height: 42%;
+		height: 45%;
 	}
 
 /* MY STORY */
@@ -805,7 +856,7 @@ footer {
 		width: 90%;
 	}
 
-	.group {
+	.group, .group-email, .group-name {
 		width: 90%;
 	}
 
@@ -876,7 +927,7 @@ footer {
 	 }
 
 	 .project-wrap {
-		 width: 90%;
+		 width: 100%;
 	 }
 
 	 .title-project {
