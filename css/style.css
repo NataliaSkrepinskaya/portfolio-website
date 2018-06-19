@@ -445,7 +445,10 @@ footer {
 	padding-top: 1rem;
 	background-color: #110640;
 }
-
+/* hidden the size of scrolling section for smooth scrolling */
+:focus {
+outline: none;
+}
 /* ICON FIXED */
 .fixed {
   display: none;
@@ -464,6 +467,8 @@ footer {
 .fixed:hover .fixedicon {
 	fill: grey;
 }
+
+
 /* PAGES PROJECT1-PROJECT2 */
 .project-link {
 	display: inline-block;
@@ -695,6 +700,9 @@ footer {
 }
 
 /* PAGES PROJECT1-PROJECT4 */
+  #container-project {
+	  margin-top: 0rem;
+  }
   .project-link {
     margin-left: 20rem;
   }
@@ -712,7 +720,7 @@ footer {
 	/* FONTS */
 	h1 {
 	 font-size: 2rem;
-	 line-height: 2.12rem;
+	 line-height: 3.2rem;
 	 padding: 4rem 0rem 1rem 0rem;
 	}
 
@@ -916,9 +924,7 @@ footer {
 	}
 
 /* PAGES PROJECT1-PROJECT4 */
-  .container-project {
-    display: flex;
-    flex-direction: column;
+   #container-project {
     margin-top: 0rem;
    }
 
