@@ -380,7 +380,7 @@ label {
 }
 
 
-input[type="submit"] {
+button {
   background-color: #F4550A;
   border: none;
   width: 12.1875rem;
@@ -397,7 +397,7 @@ input[type="submit"] {
 	transition: 0.5s;
 }
 
-input[type="submit"]:hover {
+button:hover {
   background-color: #D14807;
 }
 
@@ -893,7 +893,7 @@ outline: none;
 		padding-top: 1.5rem;
 	}
 
-	input[type="submit"] {
+	button {
 		margin: 3rem 0 3rem 0;
 	}
 
