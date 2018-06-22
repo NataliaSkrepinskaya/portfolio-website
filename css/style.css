@@ -190,6 +190,7 @@ nav ul li a {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
+	max-width: 223px;
 }
 
 .menu h2 {
@@ -389,6 +390,8 @@ input[type="submit"] {
 	font-weight: 500;
   letter-spacing: 0.125rem;
   color: #ffffff;
+	-moz-border-radius: 0.5rem;
+	-webkit-border-radius: 0.5rem;
   border-radius: 0.5rem;
   margin: 4.375rem 0 4.375rem 0;
 	transition: 0.5s;
@@ -575,6 +578,10 @@ outline: none;
 	}
 
 /* HEADER */
+  .container picture {
+	  max-width: 35px;
+  }
+
 	.main-link {
 		width: auto;
 		height: auto;
@@ -629,6 +636,10 @@ outline: none;
 	.container {
 		height: 4rem;
 	}
+
+	.container picture {
+	  max-width: 35px;
+  }
 
 	.main-link {
 		width: auto;
@@ -752,7 +763,12 @@ outline: none;
 /* HEADER */
   .container {
 		height: 3rem;
+		max-width: 288px;
 	}
+
+  .container picture {
+	  max-width: 35px;
+  }
 
   .main-link {
 		width: auto;
