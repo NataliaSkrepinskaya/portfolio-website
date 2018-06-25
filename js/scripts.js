@@ -1,14 +1,8 @@
-console.log("He said: \"Yes!\", that's for sure")
-console.log("Hello guys! I would like say you that")
-var foo = {baz1: "Frontend Development", baz2: "UI Design", goo: "important"}, baz3 ="UX Design";
-console.log("%s has %d %s aspects. I describe it as %s, %s and %s.", "Web design ", 3, foo.goo, baz3, foo.baz2, foo.baz1);
-
 //  Validation correct email //
 function validateEmail (email) {
-  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@(([[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
   return re.test(email)
 }
-
 function validate () {
   var email = $('#email').val()
 
@@ -25,9 +19,10 @@ function validate () {
   }
   return false
 }
-///  clicking on button "submit"  //
+//  clicking on button "submit"  //
 $('#validate').bind('click', validate)
 
+//  Snooth scrolling  //
 // Select all links with hashes //
 $('a[href*="#"]')
   // Remove links that don't actually link to anything //
@@ -36,8 +31,7 @@ $('a[href*="#"]')
   .click(function (event) {
     // On-page links //
     if (
-      location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
-      &&
+      location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
       location.hostname === this.hostname
     ) {
       // Figure out element to scroll to //
