@@ -455,6 +455,10 @@ button:hover {
 	fill: #CD4607;
 }
 
+.icon-inside {
+	fill: #E6E3FF;
+}
+
 .menu-social ul li a:hover .icon {
 	fill: #B13C04;
 }
