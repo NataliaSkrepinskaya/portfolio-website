@@ -924,6 +924,10 @@ outline: none;
 	  margin: 0rem auto;
 	}
 
+	.pic picture {
+		margin: 0rem auto;
+	}
+
 	.pic picture img:nth-child(odd)  {
 	  margin: 0rem auto;
 	}
