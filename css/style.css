@@ -89,24 +89,28 @@ header {
 
 .container {
 	display: flex;
+	width: 100%;
 	justify-content: space-between;
 	align-items: center;
-	max-width: 47rem;
 	height: 5rem;
-	margin: 0rem auto;
+	margin: 0% 8%;
 	padding: 0rem;
 }
 
 picture {
- max-width: 14rem;
  height: auto;
  display: flex;
 }
 
 nav {
 	display: flex;
+	width: 70%;
 	flex-direction: row-reverse;
 	align-items: center;
+}
+
+.container a {
+	width: 30%;
 }
 
 nav ul {
@@ -204,8 +208,6 @@ nav ul li a {
 .menu h2:hover {
 	color: #B13C04;
 }
-
-
 
 .menu ul li:not(:first-child){
 	margin-left: 10rem;
@@ -335,11 +337,11 @@ nav ul li a {
 }
 
 .line_s_picture {
-	margin: 0% 4% 0% auto;
+	margin: 0% auto 0% 0%;
 }
 
 .line_f_picture {
-	margin: 0% auto 0% 4%
+	margin: 0% 0% 0% auto;
 }
 /* CONTACT ME */
 .inputs {
@@ -598,12 +600,12 @@ outline: none;
 	}
 
 /* HEADER */
-  .container {
-		max-width: 32rem;
-	}
+  .container a {
+	  width: 15%;
+  }
 
-  .container picture {
-	  max-width: 35px;
+  nav {
+	  width: 85%;
   }
 
 	.main-link {
@@ -655,12 +657,17 @@ outline: none;
   }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
 	/* FONTS */
 	h1 {
 	 font-size: 2rem;
 	 line-height: 3.2rem;
 	 padding: 4rem 0rem 1rem 0rem;
+	}
+
+	nav ul li a {
+		font-size: 1rem;
+		line-height: 1.6rem;
 	}
 
 	#home h2 {
@@ -682,12 +689,15 @@ outline: none;
 /* HEADER */
 	.container {
 		height: 4rem;
-		max-width: 32rem;
 	}
 
-	.container picture {
-	  max-width: 35px;
-  }
+	.container a {
+		width: 12%;
+	}
+
+	nav {
+		width: 88%;
+	}
 
 	.main-link {
 		width: auto;
@@ -815,12 +825,16 @@ outline: none;
 /* HEADER */
   .container {
 		height: 3rem;
-		max-width: 18rem;
+		width: 90%;
+		margin: 0% auto;
+	}
+  .container a {
+		width: 12%;
 	}
 
-  .container picture {
-	  max-width: 35px;
-  }
+	nav {
+		width: 88%;
+	}
 
   .main-link {
 		width: auto;
